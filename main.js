@@ -61,5 +61,9 @@ container.addEventListener("click",(у) =>{
 
     }else if(e.target.classList.contains("btn-dec")){
         if (currentCount > 0) currentCount--;
+
+        countElement.innerText = currentCount.toString().padStart(2 , "0");
     }
 });
+
+
