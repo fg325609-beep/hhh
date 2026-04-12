@@ -35,16 +35,16 @@ function render(foods){
     container.innerHTML = foods.map(food =>`
         <div class="card">
        <img src="https://picsum.photos/id/${food.id + 10}/200/200" alt="food">
-       <h3></h3>
-       <p></p>
-       <a href=""></a>
+       <h3>${food.name}</h3>
+       <p>${food.desc}</p>
+       <a href="#">${food.price}</a>
        <div class="stepper">
-        <button></button>
-        <h1></h1>
-        <button></button>
-        <button></button>
+        <button class="btn-dec" data-id="${food.id}">-</button>
+                <h1 id="count-${food.id}">0</h1>
+                <button class="btn-inc" data-id="${food.id}">+</button>
+                <button class="add-btn">bosing</button>
        </div>
 
 </div>
-        `)
+        `).join("");
 }
