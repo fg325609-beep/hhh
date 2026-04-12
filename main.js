@@ -49,7 +49,7 @@ function render(foods){
         `).join("");
 }
 
-container.addEventListener("click",(у) =>{
+container.addEventListener("click",(e) =>{
     const id = e.target.getAttribute("data-id");
     if (!id) return
 
@@ -60,7 +60,7 @@ container.addEventListener("click",(у) =>{
         currentCount++;
 
     }else if(e.target.classList.contains("btn-dec")){
-        if (currentCount > 0) currentCount--;
+        if (currentCount > 1) currentCount--;
 
         countElement.innerText = currentCount.toString().padStart(2 , "0");
     }
