@@ -49,29 +49,29 @@ function render(foods){
         `).join("");
 }
 
-container.addEventListener("click",(e) =>{
+container.addEventListener("click", (e) => {
     const id = e.target.getAttribute("data-id");
-    if (!id) return
+    if (!id) return; 
 
     const countElement = document.getElementById(`count-${id}`);
-    let currentCount = perseInt(countElement.innerText);
+    let currentCount = parseInt(countElement.innerText);
 
-    if (e.target.classList.contains("btn-inc")){
+    if (e.target.classList.contains("btn-inc")) {
         currentCount++;
-
-    }else if(e.target.classList.contains("btn-dec")){
+    } else if (e.target.classList.contains("btn-dec")) {
         if (currentCount > 1) currentCount--;
-
-        countElement.innerText = currentCount.toString().padStart(2 , "0");
     }
+
+    countElement.innerText = currentCount.toString().padStart(2, '0');
 });
 
-input.addEventListener("input",(e) =>{
+input.addEventListener("input", (e) => {
     let text = e.target.value.toLowerCase();
-    let filteredFoods = data.filter(food =>
-        food.name.toLowerCase().includes(text) ||
+    let filteredFoods = data.filter(food => 
+        food.name.toLowerCase().includes(text) || 
         food.desc.toLowerCase().includes(text)
     );
-    render(filteredFoods)
+    render(filteredFoods);
 });
+
 render(data);
