@@ -5,3 +5,82 @@ body {
     margin: 0;
     padding: 20px;
 }
+
+#container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#card{
+    width: 30%;
+
+}
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    /* width: 176px;
+    height: 176px; */
+    border-radius: 50px;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+#input{
+    
+}
+.card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 12px 0;
+    color: #E1E1E6;
+}
+
+.card p {
+    font-size: 14px;
+    color: #C4C4CC;
+    margin-bottom: 16px;
+}
+
+.card a {
+    display: block;
+    font-size: 32px;
+    color: #82F3FF;
+    text-decoration: none;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+
+
+.stepper h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    min-width: 30px;
+}
+.add-btn {
+    background-color: #750310;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #92000E;
+}
+
