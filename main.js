@@ -66,4 +66,11 @@ container.addEventListener("click",(у) =>{
     }
 });
 
-
+input.addEventListener("input",(e) =>{
+    let text = e.target.value.toLowerCase();
+    let filteredFoods = data.filter(food =>
+        food.name.toLowerCase().includes(text) ||
+        food.desc.toLowerCase().includes(text)
+    );
+    render(filteredFoods)
+});
