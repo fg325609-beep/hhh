@@ -1,5 +1,5 @@
-let input = document.getElementById("input");
 let container = document.getElementById("container");
+let input = document.getElementById("input");
 
 let data = [
     { id: 1, name: "Salada Ravanello", desc: "Rabanetes, folhas verdes...", price: "49,97" },
@@ -30,23 +30,21 @@ let data = [
 
 ];
 
-
-function render(foods){
-    container.innerHTML = foods.map(food =>`
+function render(foods) {
+    container.innerHTML = foods.map(food => `
         <div class="card">
-       <img src="https://picsum.photos/id/${food.id + 10}/200/200" alt="food">
-       <h3>${food.name}</h3>
-       <p>${food.desc}</p>
-       <a href="#">${food.price}</a>
-       <div class="stepper">
-        <button class="btn-dec" data-id="${food.id}">-</button>
+            <img src="https://picsum.photos/id/${food.id + 10}/200/200" alt="food">
+            <h3>${food.name}</h3>
+            <p>${food.desc}</p>
+            <a href="#">R$ ${food.price}</a>
+            <div class="stepper">
+                <button class="btn-dec" data-id="${food.id}">-</button>
                 <h1 id="count-${food.id}">0</h1>
                 <button class="btn-inc" data-id="${food.id}">+</button>
                 <button class="add-btn">bosing</button>
-       </div>
-
-</div>
-        `).join("");
+            </div>
+        </div>
+    `).join("");
 }
 
 container.addEventListener("click", (e) => {
@@ -75,7 +73,3 @@ input.addEventListener("input", (e) => {
 });
 
 render(data);
-
-
-
-
