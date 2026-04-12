@@ -74,3 +74,4 @@ input.addEventListener("input",(e) =>{
     );
     render(filteredFoods)
 });
+render(data);
