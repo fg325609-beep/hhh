@@ -56,5 +56,10 @@ container.addEventListener("click",(у) =>{
     const countElement = document.getElementById(`count-${id}`);
     let currentCount = perseInt(countElement.innerText);
 
-    
+    if (e.target.classList.contains("btn-inc")){
+        currentCount++;
+
+    }else if(e.target.classList.contains("btn-dec")){
+        if (currentCount > 0) currentCount--;
+    }
 });
