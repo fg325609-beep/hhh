@@ -48,3 +48,13 @@ function render(foods){
 </div>
         `).join("");
 }
+
+container.addEventListener("click",(у) =>{
+    const id = e.target.getAttribute("data-id");
+    if (!id) return
+
+    const countElement = document.getElementById(`count-${id}`);
+    let currentCount = perseInt(countElement.innerText);
+
+    
+});
