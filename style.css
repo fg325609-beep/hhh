@@ -1,3 +1,4 @@
+/* Umumiy sahifa sozlamalari */
 body {
     background-color: #000A0F;
     color: #FFFFFF;
@@ -6,34 +7,52 @@ body {
     padding: 20px;
 }
 
-#container{
+#container {
     width: 100%;
     max-width: 1200px;
-    margin: 100px auto;
+    display: flex;
+    gap: 24px;
+    padding: 20px 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    margin: 100px auto;
 }
-#card{
-    width: 30%;
+#input{
+    width: 50%;
+    margin: 100px auto;
+    display: flex;
+    border: none;
+    outline: none;
+    padding: 20px ;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+}
+#input:hover{
+  transform: scale(1.1);
+}
+.card {
+    background: #00070A;
+    border: 1px solid #000204;
+    border-radius: 8px;
+    padding: 24px;
+    min-width: 280px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.2s;
+}
 
-}
 .card:hover {
     transform: scale(1.02);
 }
 
 .card img {
-    /* width: 176px;
-    height: 176px; */
-    border-radius: 50px;
+    width: 176px;
+    height: 176px;
+    border-radius: 50%;
     object-fit: cover;
     margin-bottom: 16px;
 }
-#input{
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-}
+
 .card h3 {
     font-size: 24px;
     font-weight: 700;
@@ -71,6 +90,7 @@ body {
     margin: 0;
     min-width: 30px;
 }
+
 .add-btn {
     background-color: #750310;
     color: #FFFFFF;
