@@ -33,5 +33,18 @@ let data = [
 
 function render(foods){
     container.innerHTML = foods.map(food =>`
+        <div class="card">
+       <img src="https://picsum.photos/id/${food.id + 10}/200/200" alt="food">
+       <h3></h3>
+       <p></p>
+       <a href=""></a>
+       <div class="stepper">
+        <button></button>
+        <h1></h1>
+        <button></button>
+        <button></button>
+       </div>
+
+</div>
         `)
 }
