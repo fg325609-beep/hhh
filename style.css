@@ -52,7 +52,7 @@ body {
     object-fit: cover;
     margin-bottom: 16px;
 }
-.card img:active{
+.card:active{
     /* color: #92000E; */
     background: #750310;
 }
