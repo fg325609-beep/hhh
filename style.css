@@ -83,6 +83,9 @@ body {
     text-decoration: none;
     font-weight: 400;
     margin-bottom: 16px;
+    &:hover{
+        color: red;
+    }
 }
 
 .stepper {
@@ -116,11 +119,15 @@ body {
     background-color: #92000E;
 }
 
-.container_f{
+#container_f{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 100px;
+}
+#container_f p:hover{
+    color: #82F3FF;
 }
