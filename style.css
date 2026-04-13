@@ -44,7 +44,11 @@ body {
 .card:hover {
     transform: scale(1.02);
 }
+.hero{
+    display: flex;
+    align-items: center;
 
+}
 .card img {
     width: 176px;
     height: 176px;
