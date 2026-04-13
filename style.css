@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 100px auto;
+    margin: 0 auto;
 }
 #input{
     width: 50%;
@@ -47,6 +48,7 @@ body {
 .hero{
     display: flex;
     align-items: center;
+    margin: 0 auto;
 
 }
 .card img {
